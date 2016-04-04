@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JessicaDigital jquery-detectfont demo</title>
+    </head>
+    <body>
+        <h3>Example One</h3>
+        <pre>font-family:'Arial';</pre>
+        <div class="example" style="font-family:'Arial';">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis justo id tellus aliquam, pretium mattis ipsum dictum. Donec sed tristique lectus. Mauris viverra consectetur sem venenatis varius. Integer cursus nunc sed ipsum tempus, eu eleifend dui imperdiet. Nulla aliquet sagittis arcu, vitae vehicula odio sollicitudin ac. Fusce at nisi rutrum magna bibendum cursus sit amet sed risus. Suspendisse id varius arcu, sit amet scelerisque nisi. Nulla facilisi. Aliquam varius bibendum ultrices. 
+        </div>
+        <p class="result">Result: <strong></strong></p>
+        
+        <hr />
+        <h3>Example Two</h3>
+        <pre>font-family:'Helvetica','Arial',sans-serif;</pre>
+        <div class="example" style="font-family:'Helvetica','Arial',sans-serif;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis justo id tellus aliquam, pretium mattis ipsum dictum. Donec sed tristique lectus. Mauris viverra consectetur sem venenatis varius. Integer cursus nunc sed ipsum tempus, eu eleifend dui imperdiet. Nulla aliquet sagittis arcu, vitae vehicula odio sollicitudin ac. Fusce at nisi rutrum magna bibendum cursus sit amet sed risus. Suspendisse id varius arcu, sit amet scelerisque nisi. Nulla facilisi. Aliquam varius bibendum ultrices. 
+        </div>
+        <p class="result">Result: <strong></strong></p>
+        
+        <hr />
+        <h3>Example Three</h3>
+        <pre>font-family:'xx','Times New Roman',serif;</pre>
+        <div class="example" style="font-family:'xx','Times New Roman',serif;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis justo id tellus aliquam, pretium mattis ipsum dictum. Donec sed tristique lectus. Mauris viverra consectetur sem venenatis varius. Integer cursus nunc sed ipsum tempus, eu eleifend dui imperdiet. Nulla aliquet sagittis arcu, vitae vehicula odio sollicitudin ac. Fusce at nisi rutrum magna bibendum cursus sit amet sed risus. Suspendisse id varius arcu, sit amet scelerisque nisi. Nulla facilisi. Aliquam varius bibendum ultrices. 
+        </div>
+        <p class="result">Result: <strong></strong></p>
+        
+        
+        <hr />
+        <h3>Example Four</h3>
+        <pre>font-family:monospace;</pre>
+        <div class="example" style="font-family:monospace;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis justo id tellus aliquam, pretium mattis ipsum dictum. Donec sed tristique lectus. Mauris viverra consectetur sem venenatis varius. Integer cursus nunc sed ipsum tempus, eu eleifend dui imperdiet. Nulla aliquet sagittis arcu, vitae vehicula odio sollicitudin ac. Fusce at nisi rutrum magna bibendum cursus sit amet sed risus. Suspendisse id varius arcu, sit amet scelerisque nisi. Nulla facilisi. Aliquam varius bibendum ultrices. 
+        </div>
+        <p class="result">Result: <strong></strong></p>
+        
+        <hr />
+        <h3>Example Five</h3>
+        <pre>font-family:hcvhnvcghvmhj,'Open Sans',monospace;</pre>
+        <div class="example" style="font-family:hcvhnvcghvmhj,'Open Sans',monospace;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis justo id tellus aliquam, pretium mattis ipsum dictum. Donec sed tristique lectus. Mauris viverra consectetur sem venenatis varius. Integer cursus nunc sed ipsum tempus, eu eleifend dui imperdiet. Nulla aliquet sagittis arcu, vitae vehicula odio sollicitudin ac. Fusce at nisi rutrum magna bibendum cursus sit amet sed risus. Suspendisse id varius arcu, sit amet scelerisque nisi. Nulla facilisi. Aliquam varius bibendum ultrices. 
+        </div>
+        <p class="result">Result: <strong></strong></p>
+        
+        <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+        <script src="../dist/jquery.detectfont.min.js"></script>
+        <script>
+            (function($){
+                $('.example').each(function() {
+                    $(this).next('.result').find('strong').text($(this).detectFont());
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>
