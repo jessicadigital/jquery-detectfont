@@ -33,7 +33,6 @@ String.prototype.unquoted = function() {
         var detectedFont = null;
         
         for (var f in fonts) {
-            console.info(fonts[f]);
             var clone = element.clone().css({
                 'visibility': 'visible', 
                 'font-family': fonts[f].unquoted()
